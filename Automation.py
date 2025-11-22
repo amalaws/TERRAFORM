@@ -8,8 +8,8 @@ def launch_ec2():
 
     response = ec2.create_instances(
         ImageId="ami-0fa3fe0fa7920f68e",
-        MinCount=3,
-        MaxCount=3,
+        MinCount=1,
+        MaxCount=1,
         InstanceType="t3.micro",
         KeyName="public",
     )
